@@ -47,7 +47,7 @@
   
   .footer-btn-main {
     color: white;
-    background-color: #009fff;
+    background-color:rgb(0,174,243);
     font-weight: 500;
     font-size: 1.6rem;
     padding: 1rem 3.5rem;
@@ -55,7 +55,8 @@
   }
   
   .footer-btn-main:hover {
-    color: #555;
+    color: #555 ;
+    font-weight: bold;
     background-color: whitesmoke;
   }
   
