@@ -98,42 +98,22 @@ const slider = function () {
   });
   
   //Accordion component
-  const arrowDownIcon1 = document.querySelector(".down1");
-  const arrowDownIcon2 = document.querySelector(".down2");
-  const arrowDownIcon3 = document.querySelector(".down3");
-  
-  const question1 = document.querySelector(".question1");
-  const question2 = document.querySelector(".question2");
-  const question3 = document.querySelector(".question3");
-  
-  const answer1 = document.querySelector(".hidden-box1");
-  const answer2 = document.querySelector(".hidden-box2");
-  const answer3 = document.querySelector(".hidden-box3");
-  
-  question1.addEventListener("click", () => {
-    answer1.classList.toggle("hidden");
-    answer2.classList.add("hidden");
-    answer3.classList.add("hidden");
-    arrowDownIcon1.classList.toggle("active");
-    arrowDownIcon2.classList.remove("active");
-    arrowDownIcon3.classList.remove("active");
+  const arrowDownIcons = document.querySelectorAll(".down");
+const questions = document.querySelectorAll(".question");
+const answers = document.querySelectorAll(".hidden-box");
+questions.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    answers.forEach((answer, answerIndex) => {
+      if (answerIndex != index) {
+        answer.classList.add("hidden");
+      }
+    });
+    arrowDownIcons.forEach((arrow, arrowIndex) => {
+      if (arrowIndex != index) {
+        arrow.classList.remove("active");
+      }
+    });
+    arrowDownIcons[index].classList.toggle("active");
+    answers[index].classList.toggle("hidden");
   });
-  
-  question2.addEventListener("click", () => {
-    answer2.classList.toggle("hidden");
-    answer1.classList.add("hidden");
-    answer3.classList.add("hidden");
-    arrowDownIcon2.classList.toggle("active");
-    arrowDownIcon1.classList.remove("active");
-    arrowDownIcon3.classList.remove("active");
-  });
-  
-  question3.addEventListener("click", () => {
-    answer3.classList.toggle("hidden");
-    answer2.classList.add("hidden");
-    answer1.classList.add("hidden");
-    arrowDownIcon3.classList.toggle("active");
-    arrowDownIcon1.classList.remove("active");
-    arrowDownIcon2.classList.remove("active");
-  });
-  
+});
