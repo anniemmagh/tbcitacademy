@@ -98,9 +98,9 @@ const slider = function () {
   });
   
   //Accordion component
-  const arrowDownIcon1 = document.querySelector(".arrowDown-icon1");
-  const arrowDownIcon2 = document.querySelector(".arrowDown-icon2");
-  const arrowDownIcon3 = document.querySelector(".arrowDown-icon3");
+  const arrowDownIcon1 = document.querySelector(".down1");
+  const arrowDownIcon2 = document.querySelector(".down2");
+  const arrowDownIcon3 = document.querySelector(".down3");
   
   const question1 = document.querySelector(".question1");
   const question2 = document.querySelector(".question2");
