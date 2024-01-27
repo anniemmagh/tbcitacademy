@@ -82,7 +82,7 @@ const slider = function () {
   
   //Mobile Navigation
   const headerEl = document.querySelector(".header-container");
-  const btnNavEl = document.querySelector(".btn-mobile-nav");
+  const btnNavEl = document.querySelector(".mobile-nav");
   const overlay = document.querySelector(".overlay");
   
   btnNavEl.addEventListener("click", function () {
