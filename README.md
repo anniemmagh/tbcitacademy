@@ -12,6 +12,7 @@ The project repository contains code written in HTML, CSS, and JavaScript. The r
 
 [Link to GitHub Repository](https://github.com/anniemmagh/tbcitacademy)
 
+https://tbcitacademyprojcet.netlify.app/ - Live
 ## Running the Project
 
 To run this project locally, follow these steps:
