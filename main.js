@@ -80,25 +80,26 @@ const slider = function () {
   };
   slider();
   
-  //Mobile Navigation
-  const headerEl = document.querySelector(".header-container");
-  const btnNavEl = document.querySelector(".mobile-nav");
-  const overlay = document.querySelector(".overlay");
   
-  btnNavEl.addEventListener("click", function () {
-    headerEl.classList.toggle("nav-open");
-    overlay.classList.toggle("hidden");
-  });
-  
-  window.addEventListener("click", function (event) {
-    if (event.target === overlay) {
-      headerEl.classList.remove("nav-open");
-      overlay.classList.add("hidden");
-    }
-  });
-  
-  //Accordion component
-  const arrowDownIcons = document.querySelectorAll(".down");
+//Mobile Navigation
+// const headerEl = document.querySelector(".header-container");
+// const btnNavEl = document.querySelector(".btn-mobile-nav");
+// const overlay = document.querySelector(".overlay");
+// console.log(btnNavEl);
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+//   overlay.classList.toggle("hidden");
+// });
+
+window.addEventListener("click", function (event) {
+  if (event.target === overlay) {
+    headerEl.classList.remove("nav-open");
+    overlay.classList.add("hidden");
+  }
+});
+
+//Accordion component
+const arrowDownIcons = document.querySelectorAll(".down");
 const questions = document.querySelectorAll(".question");
 const answers = document.querySelectorAll(".hidden-box");
 questions.forEach((item, index) => {
