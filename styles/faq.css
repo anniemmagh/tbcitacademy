@@ -41,20 +41,17 @@
     font-size: 1.6rem;
   }
   
-  .down1,
-  .down2,
-  .down3 {
+  .down{
     width: 2.4rem;
   }
+  
   
   .accordion {
     width: 100%;
     grid-column: span 2;
   }
   
-  .question1,
-  .question2,
-  .question3 {
+  .question {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -64,9 +61,9 @@
     cursor: pointer;
   }
   
-  .hidden-box1 p,
-  .hidden-box2,
-  .hidden-box3 {
+  .hidden-box p,
+  .hidden-box,
+  .hidden-box {
     font-size: 1.4rem;
     line-height: 1.5;
   }
@@ -80,9 +77,12 @@
   
   .hidden {
     display: none;
+    max-height: 1000px;
+    transition:.3s ease-in;
   }
   
   .active {
     transform: rotate(180deg);
+    transition:.3s ease-in;
   }
   
