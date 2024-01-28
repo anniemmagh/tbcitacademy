@@ -70,7 +70,9 @@ const slider = function () {
 
   dotContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("dots__dot")) {
-      const { slide } = e.target.dataset;
+      const {
+        slide
+      } = e.target.dataset;
       goToSlide(slide);
       activateDot(slide);
     }
@@ -117,4 +119,3 @@ questions.forEach((item, index) => {
     answers[index].classList.toggle("hidden");
   });
 });
-
